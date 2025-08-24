@@ -12,7 +12,7 @@
 // - https://wiki.debian.org/Apt
 // - https://ubuntu.com/server/docs/package-management
 // This package is part of the syspkg library.
-package apt
+package aptfast
 
 import (
 	"context"
@@ -28,7 +28,7 @@ import (
 	"github.com/bluet/syspkg/manager"
 )
 
-var pm string = "apt"
+var pm string = "apt-fast"
 
 // Constants used for apt commands
 const (
@@ -128,7 +128,7 @@ func (a *PackageManager) IsAvailable() bool {
 
 	// Test if this is actually functional Debian apt by trying a safe command
 	// This approach: if apt+dpkg work together, support them regardless of platform
-	output, err := a.getRunner().Run("apt", "--version")
+	output, err := a.getRunner().Run(pm, "--version")
 	if err != nil {
 		return false
 	}

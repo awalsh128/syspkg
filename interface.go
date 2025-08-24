@@ -37,6 +37,8 @@ type PackageManager interface {
 	//   - Both package managers provide accurate status detection
 	Find(keywords []string, opts *manager.Options) ([]manager.PackageInfo, error)
 
+	ListInstalledFiles(pkg string) ([]string, error)
+
 	// ListInstalled lists all currently installed packages.
 	// Returns packages with Status=installed, Version set to installed version, NewVersion empty.
 	ListInstalled(opts *manager.Options) ([]manager.PackageInfo, error)

@@ -13,6 +13,7 @@ package flatpak
 
 import (
 	"context"
+	"fmt"
 	"log"
 	"os"
 	"os/exec"
@@ -199,6 +200,10 @@ func (a *PackageManager) Find(keywords []string, opts *manager.Options) ([]manag
 		}
 		return ParseFindOutput(string(out), opts), nil
 	}
+}
+
+func (a *PackageManager) ListInstalledFiles(pkg string) ([]string, error) {
+	return nil, fmt.Errorf("ListInstalledFiles not implemented")
 }
 
 // ListInstalled lists installed packages using Flatpak with the provided options.

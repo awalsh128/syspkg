@@ -25,6 +25,7 @@ package yum
 
 import (
 	"context"
+	"fmt"
 	"log"
 	"os/exec"
 	"sync"
@@ -311,6 +312,10 @@ func (a *PackageManager) Find(keywords []string, opts *manager.Options) ([]manag
 	}
 
 	return enhancedPackages, nil
+}
+
+func (a *PackageManager) ListInstalledFiles(pkg string) ([]string, error) {
+	return nil, fmt.Errorf("ListInstalledFiles not implemented")
 }
 
 // ListInstalled lists all installed packages using the yum package manager.

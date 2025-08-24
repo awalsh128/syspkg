@@ -14,10 +14,11 @@ import (
 // - Underscore (_)
 // - Period/dot (.)
 // - Plus sign (+)
+// - Equals sign (=) (e.g. package=1.2-1)
 // - Colon (:) for architecture specifiers (e.g., package:amd64)
 // - Forward slash (/) for repository specifiers (e.g., repo/package)
 // The pattern requires at least one valid character
-var packageNameRegex = regexp.MustCompile(`^[a-zA-Z0-9\-_.+:/]+$`)
+var packageNameRegex = regexp.MustCompile(`^[a-zA-Z0-9\-_.+=:/]+$`)
 
 // ErrInvalidPackageName is returned when a package name contains invalid characters
 var ErrInvalidPackageName = errors.New("invalid package name: contains potentially dangerous characters")
@@ -31,6 +32,7 @@ var ErrInvalidPackageName = errors.New("invalid package name: contains potential
 // - Underscore (_)
 // - Period/dot (.)
 // - Plus sign (+)
+// - Equals sign (=)
 // - Colon (:) for architecture specifiers
 // - Forward slash (/) for repository specifiers
 //
@@ -47,6 +49,7 @@ var ErrInvalidPackageName = errors.New("invalid package name: contains potential
 // - "python3.8"
 // - "package:amd64"
 // - "repo/package"
+// - "xdot=1.2.1"
 //
 // Example invalid names:
 // - "package; rm -rf /"

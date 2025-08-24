@@ -16,6 +16,7 @@
 package snap
 
 import (
+	"fmt"
 	"log"
 	"os"
 	"os/exec"
@@ -178,6 +179,10 @@ func (a *PackageManager) Find(keywords []string, opts *manager.Options) ([]manag
 	}
 
 	return ParseFindOutput(string(out), opts), nil
+}
+
+func (a *PackageManager) ListInstalledFiles(pkg string) ([]string, error) {
+	return nil, fmt.Errorf("ListInstalledFiles not implemented")
 }
 
 // ListInstalled lists all installed packages using the snap package manager.
