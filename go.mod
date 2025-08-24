@@ -9,3 +9,6 @@ require (
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/xrash/smetrics v0.0.0-20240521201337-686a1a2994c1 // indirect
 )
+
+// Replace the syspkg Github user module with forked version
+replace github.com/bluet/syspkg => github.com/awalsh128/syspkg v0.0.0-20250824000000-1c8adea
