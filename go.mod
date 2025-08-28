@@ -1,4 +1,4 @@
-module github.com/bluet/syspkg
+module github.com/awalsh128/syspkg
 
 go 1.23
 
