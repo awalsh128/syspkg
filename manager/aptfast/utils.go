@@ -16,7 +16,7 @@ import (
 	// "github.com/rs/zerolog"
 	// "github.com/rs/zerolog/log"
 
-	"github.com/bluet/syspkg/manager"
+	"github.com/awalsh128/syspkg/manager"
 )
 
 // removeRegex matches APT remove output lines to extract package information

@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/bluet/syspkg/manager"
-	"github.com/bluet/syspkg/manager/yum"
-	"github.com/bluet/syspkg/testing/testenv"
+	"github.com/awalsh128/syspkg/manager"
+	"github.com/awalsh128/syspkg/manager/yum"
+	"github.com/awalsh128/syspkg/testing/testenv"
 )
 
 // TestYUMOperations_Integration tests YUM operations with real command execution

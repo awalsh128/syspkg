@@ -4,7 +4,7 @@ package osinfo_test
 import (
 	"fmt"
 
-	"github.com/bluet/syspkg/osinfo"
+	"github.com/awalsh128/syspkg/osinfo"
 )
 
 // ExampleGetOSInfo demonstrates how to use the GetOSInfo function to obtain

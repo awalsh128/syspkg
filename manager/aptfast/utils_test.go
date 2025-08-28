@@ -3,7 +3,7 @@ package aptfast_test
 import (
 	"testing"
 
-	"github.com/bluet/syspkg/manager/apt"
+	"github.com/awalsh128/syspkg/manager/apt"
 )
 
 // TestPackageManager_IsAvailable tests the basic availability check behavior

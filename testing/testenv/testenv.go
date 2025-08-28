@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bluet/syspkg/osinfo"
+	"github.com/awalsh128/syspkg/osinfo"
 )
 
 // TestEnvironment represents the current testing environment

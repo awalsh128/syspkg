@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/bluet/syspkg/manager"
-	"github.com/bluet/syspkg/manager/yum"
+	"github.com/awalsh128/syspkg/manager"
+	"github.com/awalsh128/syspkg/manager/yum"
 )
 
 // loadFixture loads test fixture data from testing/fixtures/yum/

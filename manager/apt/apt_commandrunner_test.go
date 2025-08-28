@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bluet/syspkg/manager"
-	"github.com/bluet/syspkg/manager/apt"
+	"github.com/awalsh128/syspkg/manager"
+	"github.com/awalsh128/syspkg/manager/apt"
 )
 
 // TestAPT_WithMockedCommands demonstrates testing APT operations with mocked CommandRunner

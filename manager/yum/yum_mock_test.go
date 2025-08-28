@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/bluet/syspkg/manager"
-	"github.com/bluet/syspkg/manager/yum"
+	"github.com/awalsh128/syspkg/manager"
+	"github.com/awalsh128/syspkg/manager/yum"
 )
 
 // TestYUM_WithMockedCommands demonstrates testing YUM operations with mocked commands

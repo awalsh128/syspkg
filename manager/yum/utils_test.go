@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bluet/syspkg/manager"
+	"github.com/awalsh128/syspkg/manager"
 )
 
 func TestCheckRpmInstallationStatus(t *testing.T) {

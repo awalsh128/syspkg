@@ -4,8 +4,8 @@ package yum_test
 import (
 	"testing"
 
-	"github.com/bluet/syspkg/manager"
-	"github.com/bluet/syspkg/manager/yum"
+	"github.com/awalsh128/syspkg/manager"
+	"github.com/awalsh128/syspkg/manager/yum"
 )
 
 func TestYumPackageManagerNotAvailable(t *testing.T) {

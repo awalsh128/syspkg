@@ -10,8 +10,8 @@ import (
 	// "github.com/rs/zerolog/log"
 	"github.com/urfave/cli/v2"
 
-	"github.com/bluet/syspkg"
-	"github.com/bluet/syspkg/manager"
+	"github.com/awalsh128/syspkg"
+	"github.com/awalsh128/syspkg/manager"
 )
 
 // main function initializes syspkg and sets up the CLI application.

@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/bluet/syspkg/manager"
+	"github.com/awalsh128/syspkg/manager"
 )
 
 // epochRegex matches RPM epoch pattern: -digit:
